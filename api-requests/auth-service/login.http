@@ -1,0 +1,11 @@
+### LOGIN Request to get a token
+
+POST http://localhost:4005/login
+Content-Type: application/json
+
+{
+  "email": "johndoe@gmail.com",
+  "password": "1234"
+}
+
+> {% client.global.set("token", response.body.token) %}
